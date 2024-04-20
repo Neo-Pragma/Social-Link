@@ -114,8 +114,8 @@ li {
 }
 
 .btn5:hover {
-    border: 1px solid #ff7700;
-    box-shadow: 0 0 10px #ff7700;
+    border: 1px solid lime;
+    box-shadow: 0 0 10px lime;
     transform: scale(1.05);
 }
 
