@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000, #010075 300%);
+}
+
+.stars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.8;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background: url('profile.png') center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 1px solid #fff;
+}
+
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+    padding: 10px 1px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.btn1:hover {
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+    transform: scale(1.05);
+}
+
+.btn2:hover {
+    border: 1px solid #636363;
+    box-shadow: 0 0 10px #636363;
+    transform: scale(1.05);
+}
+
+.btn3:hover {
+    border: 1px solid #DD00FF;
+    box-shadow: 0 0 10px #DD00FF;
+    transform: scale(1.05);
+}
+
+.btn4:hover {
+    border: 1px solid blue;
+    box-shadow: 0 0 10px blue;
+    transform: scale(1.05);
+}
+
+.btn5:hover {
+    border: 1px solid #ff7700;
+    box-shadow: 0 0 10px #ff7700;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 25px;
+    margin: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  size: 200%;
+  
+}
